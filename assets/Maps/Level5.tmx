@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="13" tilewidth="32" tileheight="32" infinite="0" nextobjectid="20">
+ <tileset firstgid="1" name="S_E" tilewidth="450" tileheight="331" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="450" height="331" source="S_E.jpg"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" source="DungeonTileset.tsx"/>
+ <tileset firstgid="62" name="LevelFour" tilewidth="1920" tileheight="1080" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="450" height="331" source="S_E.jpg"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="63" name="Castle" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="Castle.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="319" name="spikes" tilewidth="32" tileheight="32" tilecount="25" columns="5">
+  <image source="spikes.png" width="164" height="160"/>
+ </tileset>
+ <tileset firstgid="344" name="Tiles_32x32" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="Tiles_32x32.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="408" name="hyptosis_tile-art-batch-5" tilewidth="32" tileheight="32" tilecount="722" columns="19">
+  <image source="hyptosis_tile-art-batch-5.png" width="636" height="1219"/>
+ </tileset>
+ <tileset firstgid="1130" source="GameVortex.tsx"/>
+ <tileset firstgid="1139" source="Ghost.tsx"/>
+ <tileset firstgid="1189" name="VortexChained" tilewidth="32" tileheight="32" tilecount="6" columns="2">
+  <image source="VortexChained.png" width="64" height="96"/>
+ </tileset>
+ <objectgroup name="Collision">
+  <object id="4" name="Door" type="Transport" x="47.5" y="63.5">
+   <polygon points="0,0 64.5,-1 65,64 -2,66"/>
+  </object>
+  <object id="5" name="Door" type="Transport" x="238.5" y="97">
+   <polygon points="0,0 65,0.5 66.5,64 0.5,62"/>
+  </object>
+  <object id="9" name="Platform" type="Walk" x="348" y="97.5">
+   <polygon points="0,0 65,0 65,31.5 1.5,30"/>
+  </object>
+  <object id="14" name="Platform" type="Walk" x="320" y="258.5">
+   <polygon points="0,0 95,-1 95.5,28 0,27.5"/>
+  </object>
+  <object id="13" name="Platform" type="Walk" x="193.5" y="287">
+   <polygon points="0,0 94.5,0.5 96.5,33 -1.5,32"/>
+  </object>
+  <object id="12" name="Platform" type="Walk" x="65.5" y="291">
+   <polygon points="0,0 92,-2 92,26 4,27 -1,24.5"/>
+  </object>
+  <object id="18" name="Platform" type="Walk" x="2" y="383">
+   <polygon points="0,0 477,0 477.5,32.5 -1.5,32.5"/>
+  </object>
+  <object id="19" name="Wall" type="Block" x="478" y="381.5">
+   <polygon points="0,0 -29.5,1 -30.5,-347.5 -445,-349 -445.5,1.5 -477.5,1.5 -477.5,-383 2.5,-381.5"/>
+  </object>
+  <object id="11" name="Platform" type="Walk" x="223.5" y="158.5">
+   <polygon points="0,0 93,1.5 95.5,33.5 1.5,33"/>
+  </object>
+  <object id="10" name="Platform" type="Walk" x="32" y="130.5">
+   <polygon points="0,0 96.5,-2.5 96,32.5 2,30.5"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="Characters">
+  <object id="17" name="Thug Start" type="Location" x="32" y="99.5">
+   <polygon points="0,0 32.5,-0.5 32,28.5 0.5,29"/>
+  </object>
+  <object id="15" name="Eagle Start" type="Location" x="161.5" y="96">
+   <polygon points="0,0 30.5,1 31,31.5 -2.5,32.5"/>
+  </object>
+  <object id="16" name="Snake Start" type="Location" x="382.5" y="63.5">
+   <polygon points="0,0 31,-0.5 31,33.5 1.5,32.5"/>
+  </object>
+  <object id="2" name="Character Exit" type="Location" x="416" y="35.5">
+   <polygon points="0,0 28.5,0 30.5,30 -1.5,28"/>
+  </object>
+  <object id="8" name="Thug Start" type="Location" x="385.5" y="231.5">
+   <polygon points="0,0 28,0 28,24 1.5,23"/>
+  </object>
+  <object id="6" name="Eagle Start" type="Location" x="130.5" y="261">
+   <polygon points="0,0 24,0.5 28.5,26 -1,26"/>
+  </object>
+  <object id="3" name="Character Start" type="Location" x="31.5" y="351.5">
+   <polygon points="0,0 32,0 32,31.5 -0.5,32.5"/>
+  </object>
+  <object id="1" name="Character Entrance" type="Location" x="31" y="322">
+   <polygon points="0,0 33.5,0.5 31,29 -0.5,27.5"/>
+  </object>
+  <object id="7" name="Snake Start" type="Location" x="417.5" y="360">
+   <polygon points="0,0 27.5,-0.5 27.5,24 -3,25"/>
+  </object>
+ </objectgroup>
+ <layer name="Background" width="15" height="13">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,73,74,75,0,0,
+0,0,0,0,0,0,0,0,0,0,121,122,123,0,0,
+1,0,0,0,0,0,0,0,0,0,137,138,139,0,0,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Objects" width="15" height="13">
+  <data encoding="csv">
+229,230,231,229,230,231,229,230,231,229,230,231,229,230,231,
+245,172,173,174,0,0,0,0,0,0,0,0,0,0,231,
+261,188,189,190,0,0,0,172,173,174,0,0,0,0,247,
+229,204,205,206,0,0,0,188,189,190,0,230,231,0,263,
+245,230,230,231,0,0,0,204,205,206,0,0,0,0,231,
+261,0,0,0,0,0,0,229,230,231,0,0,0,0,247,
+229,0,0,0,0,0,0,0,0,0,0,0,0,0,263,
+245,0,0,0,0,0,0,0,0,0,0,0,0,0,231,
+261,0,0,0,0,0,0,0,0,0,229,230,231,0,247,
+229,0,229,230,231,0,246,246,246,0,121,122,123,0,263,
+245,0,111,112,113,0,0,0,0,0,137,138,139,0,231,
+261,0,127,128,129,0,0,0,0,0,153,154,155,0,247,
+261,262,263,261,262,263,261,262,263,261,262,263,261,262,263
+</data>
+ </layer>
+</map>
