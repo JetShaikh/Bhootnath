@@ -1,0 +1,18 @@
+apply plugin: "java"
+
+sourceCompatibility = 1.6
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+sourceSets.main.java.srcDirs = [ "src/" ]
+
+
+eclipse.project {
+    name = appName + "-core"
+}
+
+dependencies {
+    implementation 'com.mobidevelop.robovm:robovm-rt:2.3.3'
+    implementation 'com.mobidevelop.robovm:robovm-rt:2.3.3'
+    implementation 'net.java.jinput:jinput:2.0.5'
+    implementation 'org.lwjgl.lwjgl:lwjgl:2.9.2'
+}
